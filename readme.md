@@ -8,7 +8,6 @@ This is a custom SwiftUI View called `PageControl`. It is used to represent a se
 - **Interactive**: Tapping on a dot will animate to that page.
 - **SwiftUI**: Built entirely with SwiftUI, it can be used across all Apple platforms.
 
-
 ## Installation
 
 To install this package, add the following line to the `dependencies` array in your `Package.swift` file:
@@ -60,6 +59,16 @@ The `PageControl` view uses some constants for its design:
 - `animationDuration`: The duration of the animation used to update the control. Default is 0.08.
 
 These constants can be adjusted to fit the design of your app.
+
+## Links:
+
+- [DSFPagerControl](https://github.com/dagronf/DSFPagerControl) - complex, feature rich
+- [NSPageControl](https://github.com/nerd0geek1/NSPageControl) - improved? clone of DTPageControl
+- [BFPageControl](https://github.com/bfolder/BFPageControl) - objc, complex code
+- [DTPageControl](https://github.com/demianturner/DTPageControl) - simple, minimal code, [example code](https://github.com/demianturner/PageControlExample)
+- [NSPageController tutorial](http://www.gamesforgeeks.com/2017/03/using-nspagecontroller/)
+- [NSPageController documentation](https://developer.apple.com/documentation/appkit/nspagecontroller)
+- [NSPageController tutorial](http://www.gamesforgeeks.com/2017/03/using-nspagecontroller/) 
 
 ## License
 
