@@ -86,9 +86,10 @@ struct PageControl_Previews: PreviewProvider {
       var body: some View {
          // Remeber to set currentPageIndicatorTintColor to white for dark-mode and black for lightmode
          PageControl(currentPage: $currentPage, numberOfPages: 5, pageIndicatorTintColor: .gray, currentPageIndicatorTintColor: .black)
-            .onChange(of: currentPage) { old, new in
-               Swift.print("currentPage: \(currentPage)")
-            }
+            // Github actions doesnt like the syntax bellow
+            // .onChange(of: currentPage) { old, new in
+               // Swift.print("currentPage: \(currentPage)")
+            // }
       }
    }
    static var previews: some View {
