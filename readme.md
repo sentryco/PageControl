@@ -8,6 +8,15 @@ This is a custom SwiftUI View called `PageControl`. It is used to represent a se
 - **Interactive**: Tapping on a dot will animate to that page.
 - **SwiftUI**: Built entirely with SwiftUI, it can be used across all Apple platforms.
 
+
+## Installation
+
+To install this package, add the following line to the `dependencies` array in your `Package.swift` file:
+
+```swift
+.package(url: "https://github.com/sentryco/PageControl", .branch("main"))
+```
+
 ## How to Use
 
 To use this `PageControl`, initialize it with the following parameters:
@@ -51,3 +60,7 @@ The `PageControl` view uses some constants for its design:
 - `animationDuration`: The duration of the animation used to update the control. Default is 0.08.
 
 These constants can be adjusted to fit the design of your app.
+
+## License
+
+This project is licensed under the terms of the MIT license. For more details, see the [LICENSE](LICENSE) file.

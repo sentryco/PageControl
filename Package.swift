@@ -5,15 +5,15 @@ import PackageDescription
 
 let package = Package(
     name: "PageControl",
+    platforms: [
+        .macOS(.v14), // macOS 14 and later
+    ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "PageControl",
             targets: ["PageControl"]),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "PageControl"),
         .testTarget(
