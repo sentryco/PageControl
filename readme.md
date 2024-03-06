@@ -1,7 +1,7 @@
 [![Tests](https://github.com/sentryco/PageControl/actions/workflows/Tests.yml/badge.svg)](https://github.com/sentryco/PageControl/actions/workflows/Tests.yml)
 [![codebeat badge](https://codebeat.co/badges/a0b9360c-6049-4e8a-9054-f675d06a8e21)](https://codebeat.co/projects/github-com-sentryco-pagecontrol-main)
 
-# PageControl in SwiftUI
+# 📖 PageControl in SwiftUI
 
 This is a custom SwiftUI View called `PageControl`. It is used to represent a series of pages or a carousel of views, where each page is represented by a dot. The active page's dot is highlighted.
 
