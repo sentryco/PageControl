@@ -79,9 +79,7 @@ public extension PageControl {
 /**
  * Preview
  */
-@available(macOS 14.0, *) // (seems github actions won't accept .macOS(.v14)) so we have to add this here
 #Preview(traits: .fixedLayout(width: 300, height: 300)) {
-   @available(macOS 14.0, *) // (seems github actions won't accept .macOS(.v14)) so we have to add this here
    struct DebugContainer: View {
       @State private var currentPage = 1
       var body: some View {
