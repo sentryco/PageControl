@@ -1,12 +1,11 @@
-// swift-tools-version:5.7.1
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package( // We can't use spm 5.9 yet, because github actions only support 5.7.1 at the moment
     name: "PageControl",
     platforms: [
-        .macOS(.v10_15), // macOS 10.15 and later (seems github actions won't accept .macOS(.v14))
+        .macOS(.v14), // macOS 14 and later
+        .iOS(.v17), // iOS 17 and later
     ],
     products: [
         .library(
@@ -21,3 +20,4 @@ let package = Package( // We can't use spm 5.9 yet, because github actions only 
             dependencies: ["PageControl"]),
     ]
 )
+
