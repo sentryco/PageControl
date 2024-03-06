@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package( // We can't use spm 5.9 yet, because github actions only support 5.7.1 at the moment
     name: "PageControl",
     platforms: [
-        .macOS(.v14), // macOS 14 and later
+        .macOS(.v10_15), // macOS 10.15 and later (seems github actions won't accept .macOS(.v14))
     ],
     products: [
         .library(
