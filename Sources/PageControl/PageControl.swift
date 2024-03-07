@@ -69,8 +69,9 @@ public extension PageControl {
    /**
     * The margin between each dot in the page control.
     * - Note: We do have extended tappable area now so spacing is implicit
+    * - Remark: Use -2 for macOS and 0 for iOS
     */
-   static let dotSpacing: CGFloat = 0.0
+   static let dotSpacing: CGFloat = -2.0
    /**
     * The duration of the animation used to update the page control.
     */
