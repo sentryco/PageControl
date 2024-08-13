@@ -22,7 +22,6 @@ extension PageControl {
                      currentPage = index // Sets the current page to the index of the tapped dot, with a linear animation of the specified duration.
                   }
                }
-            }
          }
       }
       .opacity(hidesForSinglePage && numberOfPages <= 1 ? 0 : 1) // Adjusts the opacity of the page control. If `hidesForSinglePage` is true and there is only one page or none, the opacity is set to 0 (hidden). Otherwise, it's set to 1 (fully visible).
