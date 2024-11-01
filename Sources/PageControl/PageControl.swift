@@ -1,6 +1,7 @@
 import SwiftUI
 /**
- * This SwiftUI PageControl view uses a HStack to layout the dots. Each dot is a Circle view with a fill color that depends on whether it represents the current page or not. The onTapGesture modifier is used to update the current page when a dot is tapped. The opacity modifier is used to hide the page control when hidesForSinglePage is true and there is only one page.
+ * This SwiftUI PageControl view uses a HStack to layout the dots. 
+ * - Description: Each dot is a Circle view with a fill color that depends on whether it represents the current page or not. The onTapGesture modifier is used to update the current page when a dot is tapped. The opacity modifier is used to hide the page control when hidesForSinglePage is true and there is only one page.
  */
 public struct PageControl: View {
    /**
