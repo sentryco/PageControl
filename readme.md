@@ -1,4 +1,5 @@
 [![Tests](https://github.com/sentryco/PageControl/actions/workflows/Tests.yml/badge.svg)](https://github.com/sentryco/PageControl/actions/workflows/Tests.yml)
+[![codebeat badge](https://codebeat.co/badges/8b4f9e7f-7541-449b-b51e-c90a6bb4d940)](https://codebeat.co/projects/github-com-sentryco-pagecontrol-main)
 
 # 🚥 PageControl in SwiftUI
 
