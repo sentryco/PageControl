@@ -21,7 +21,7 @@ struct PageControl_Previews: PreviewProvider {
       }
    }
    static var previews: some View {
-      return DebugContainer()
+      DebugContainer()
          .padding()
          .frame(width: 300, height: 300)
    }
