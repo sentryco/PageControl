@@ -36,7 +36,9 @@ public struct PageControl: View {
     * - Parameters:
     *   - currentPage: Initial page
     *   - numberOfPages: Total number of pages
-    *   - frameRect: View frame
+    *   - hidesForSinglePage: - Fixme: ⚠️️ add doc
+    *   - pageIndicatorTintColor: - Fixme: ⚠️️ add doc
+    *   - currentPageIndicatorTintColor: - Fixme: ⚠️️ add doc
     */
    public init(currentPage: Binding<Int> = .constant(0), numberOfPages: Int = 0, hidesForSinglePage: Bool = true, pageIndicatorTintColor: Color = Color.gray, currentPageIndicatorTintColor: Color = Color.white) {
       self._currentPage = currentPage
