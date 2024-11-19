@@ -1,5 +1,5 @@
-# This workflow will build a Swift project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
+# This workflow will build and test a Swift 6.0 project
+# For more information, see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
 
 name: Tests
 
@@ -15,15 +15,17 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Setup Swift
-      uses: swift-actions/setup-swift@v1
-      with:
-        swift-version: '6.0'
+    - name: Check out code
+      uses: actions/checkout@v4
+
+    - name: Install Swift 6.0
+      run: |
+        curl -s https://swift.org/builds/swift-6.0-release/xcode/swift-6.0-RELEASE/swift-6.0-RELEASE-osx.pkg > swift.pkg
+        sudo installer -pkg swift.pkg -target /
+        swift --version # Verify installation
+
     - name: Build
       run: swift build -v
-    # - name: Run tests
-    #   run: swift test -v
-    # Temporarily disabling the test run on GitHub Actions due to a compatibility issue with Swift 5.9.
-    # Local tests are running fine. We are looking into resolving this issue.
 
+    - name: Run tests
+      run: swift test -v
