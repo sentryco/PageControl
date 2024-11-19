@@ -1,3 +1,6 @@
+# This workflow will build a Swift project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
+
 name: Tests
 
 on:
@@ -13,17 +16,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Download Swift 6.0 installer
-      run: |
-        curl -sSL -o swift.pkg https://swift.org/builds/swift-6.0-release/osx/Swift-6.0-osx.pkg
-    - name: Install Swift 6.0
-      run: installer -pkg swift.pkg -target /
-    - name: Clean up
-      run: rm swift.pkg
-    - name: Set up PATH
-      run: echo 'export PATH="/Library/Developer/CommandLineTools/usr/bin:$PATH"' >> $GITHUB_ENV
-    - name: Verify Swift version
-      run: swift --version
     - name: Build
       run: swift build -v
     - name: Run tests
