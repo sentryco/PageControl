@@ -14,7 +14,7 @@ struct PageControl_Previews: PreviewProvider {
             pageIndicatorTintColor: .gray, // Sets the color of the non-current page indicator dots to gray.
             currentPageIndicatorTintColor: .black // Sets the color of the current page indicator dot to black.
          )
-         // Github actions doesnt like the syntax bellow, and refuses to build
+         // ⚠️️ Github actions doesn't like the syntax bellow, and refuses to build
          // .onChange(of: currentPage) { old, new in
          // Swift.print("currentPage: \(currentPage)")
          // }

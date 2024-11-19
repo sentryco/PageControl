@@ -1,11 +1,11 @@
-// swift-tools-version:5.9
+// swift-tools-version:6.0
 import PackageDescription
 
 let package = Package( // We can't use spm 5.9 yet, because github actions only support 5.7.1 at the moment
     name: "PageControl",
     platforms: [
-        .macOS(.v14), // macOS 14 and later
-        .iOS(.v17) // iOS 17 and later
+        .macOS(.v15), // macOS 14 and later
+        .iOS(.v18) // iOS 17 and later
     ],
     products: [
         .library(
