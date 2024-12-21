@@ -36,9 +36,9 @@ public struct PageControl: View {
     * - Parameters:
     *   - currentPage: Initial page
     *   - numberOfPages: Total number of pages
-    *   - hidesForSinglePage: - Fixme: ⚠️️ add doc
-    *   - pageIndicatorTintColor: - Fixme: ⚠️️ add doc
-    *   - currentPageIndicatorTintColor: - Fixme: ⚠️️ add doc
+    *   - hidesForSinglePage: A boolean value indicating whether the control should be hidden when there is only one page.
+    *   - pageIndicatorTintColor: The color of the inactive page indicator dots.
+    *   - currentPageIndicatorTintColor: The color of the active page indicator dot.
     */
    public init(currentPage: Binding<Int> = .constant(0), numberOfPages: Int = 0, hidesForSinglePage: Bool = true, pageIndicatorTintColor: Color = Color.gray, currentPageIndicatorTintColor: Color = Color.white) {
       self._currentPage = currentPage
